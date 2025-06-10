@@ -865,7 +865,7 @@ const utm = urlParams.get("utm")
       
           // AI에게 메시지를 보내고 응답을 받는 함수 (호출 주소 변경)
           async function getAIResponse(prompt) {
-            const selectedModel = modelSelector.val() || 'gemini-1.5-flash-latest';
+            const selectedModel = modelSelector.val() || 'gemini-2.0-flash';
             
             // ▼▼▼ 핵심 수정 부분: .get이 아닌 .post를 사용하고, 데이터를 body에 담아 보냅니다. ▼▼▼
             try {

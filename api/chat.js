@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
   }
 
   // 3. 서버에만 저장된 비밀 API 키 가져오기 (가장 중요한 부분)
-  const GEMINI_API_KEY = 'AIzaSyD6FdYvr-rPgJk6vMXI9iUsCJ0uI5_Onfw';;
+  const GEMINI_API_KEY = process.env.GEMINI_API_KEY;;
 
   const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
